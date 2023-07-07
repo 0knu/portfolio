@@ -1,0 +1,528 @@
+<html lang="cs">
+
+<head>
+
+    <meta property="og:title" content="0knu" />
+    <meta property="og:site_name" content="ondra907.com" />
+    <meta property="og:description" content="16yo; Python, C#, Web Design" />
+    <meta property="og:image" content="https://i.imgur.com/6CUOqOq.jpg" />
+    <meta name="theme-color" content="#636363" />
+
+    <title> 0knu | Home</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="icon" href="assets/favicon.png">
+    <script defer="" referrerpolicy="origin" src="/ventryshield/contents.js?z=JTdCJTIyZXhlY3V0ZWQlMjIlM0ElNUIlNUQlMkMlMjJ0JTIyJTNBJTIyZG9zZSUyMC0lMjAlNDBsaWUlMjIlMkMlMjJ4JTIyJTNBMC4yNTM4ODAzMjUwOTk0MjMyNyUyQyUyMnclMjIlM0ExNTM2JTJDJTIyaCUyMiUzQTg2NCUyQyUyMmolMjIlM0E3NTQlMkMlMjJlJTIyJTNBMTQ5NSUyQyUyMmwlMjIlM0ElMjJodHRwcyUzQSUyRiUyRnJpY2gucmlwJTJGbGllJTIyJTJDJTIyciUyMiUzQSUyMiUyMiUyQyUyMmslMjIlM0EyNCUyQyUyMm4lMjIlM0ElMjJVVEYtOCUyMiUyQyUyMm8lMjIlM0EtNjAlMkMlMjJxJTIyJTNBJTVCJTVEJTdE"></script>
+    <script nonce="27ef6153-a78c-4cf1-ae70-f83d03de9429">
+        (function(w, d) {
+            ! function(f, g, h, i) {
+                f[h] = f[h] || {};
+                f[h].executed = [];
+                f.zaraz = {
+                    deferred: [],
+                    listeners: []
+                };
+                f.zaraz.q = [];
+                f.zaraz._f = function(j) {
+                    return function() {
+                        var k = Array.prototype.slice.call(arguments);
+                        f.zaraz.q.push({
+                            m: j,
+                            a: k
+                        })
+                    }
+                };
+                for (const l of ["track", "set", "debug"]) f.zaraz[l] = f.zaraz._f(l);
+                f.zaraz.init = () => {
+                    var m = g.getElementsByTagName(i)[0],
+                        n = g.createElement(i),
+                        o = g.getElementsByTagName("title")[0];
+                    o && (f[h].t = g.getElementsByTagName("title")[0].text);
+                    f[h].x = Math.random();
+                    f[h].w = f.screen.width;
+                    f[h].h = f.screen.height;
+                    f[h].j = f.innerHeight;
+                    f[h].e = f.innerWidth;
+                    f[h].l = f.location.href;
+                    f[h].r = g.referrer;
+                    f[h].k = f.screen.colorDepth;
+                    f[h].n = g.characterSet;
+                    f[h].o = (new Date).getTimezoneOffset();
+                    if (f.dataLayer)
+                        for (const s of Object.entries(Object.entries(dataLayer).reduce(((t, u) => ({ ...t[1],
+                                ...u[1]
+                            }))))) zaraz.set(s[0], s[1], {
+                            scope: "page"
+                        });
+                    f[h].q = [];
+                    for (; f.zaraz.q.length;) {
+                        const v = f.zaraz.q.shift();
+                        f[h].q.push(v)
+                    }
+                    n.defer = !0;
+                    for (const w of [localStorage, sessionStorage]) Object.keys(w || {}).filter((y => y.startsWith("_zaraz_"))).forEach((x => {
+                        try {
+                            f[h]["z_" + x.slice(7)] = JSON.parse(w.getItem(x))
+                        } catch {
+                            f[h]["z_" + x.slice(7)] = w.getItem(x)
+                        }
+                    }));
+                    n.referrerPolicy = "origin";
+                    n.src = "/ventryshield/contents.js?z=" + btoa(encodeURIComponent(JSON.stringify(f[h])));
+                    m.parentNode.insertBefore(n, m)
+                };
+                ["complete", "interactive"].includes(g.readyState) ? zaraz.init() : f.addEventListener("DOMContentLoaded", zaraz.init)
+            }(w, d, "zarazData", "script");
+        })(window, document);
+    </script>
+    <style type="text/css" id="operaUserStyle"></style>
+    <script>
+        ((() => {
+            const origOpen = XMLHttpRequest.prototype.open;
+            XMLHttpRequest.prototype.open = function() {
+                this.addEventListener('load', function() {
+                    if (this.getResponseHeader("ventryshield-rq") && this.getResponseHeader("ventryshield-rq") === "igcacnstr") {
+                        window.location.reload();
+                    }
+                });
+                origOpen.apply(this, arguments);
+            };
+        }))();
+    </script>
+    <script>
+        const {
+            fetch: originalFetch
+        } = window;
+        window.fetch = async (...args) => {
+            let [resource, config] = args;
+            const response = await originalFetch(resource, config);
+            if (response.headers.get("ventryshield-rq") && response.headers.get("ventryshield-rq") === "igcacnstr") {
+                window.location.reload();
+            }
+            return response;
+        };
+    </script>
+    <script>
+        function check() {
+            var failed = true;
+            var failing = [];
+
+            function mobi() {
+                var match = window.matchMedia || window.msMatchMedia;
+                if (match) {
+                    var mq = match("(pointer:coarse)");
+                    return mq.matches;
+                }
+                return false;
+            }
+
+            if (!window.navigator.userAgent.includes("Mobile DuckDuckGo")) {
+                if (/hrome/i.test(window.navigator.userAgent) && typeof chrome === 'undefined')(function() {
+                    failed = false;
+                    failing.push("bruh");
+                })();
+            }
+
+            let uwu = function() {
+                const _ = document.createElement("iframe");
+                _.srcdoc = "<!DOCTYPE html>VentryShield > You";
+                return !!_.srcdoc;
+            }
+            if (!/t/i.test(uwu() + []))(function() {
+                failed = false;
+                failing.push("iframeTextCheck");
+            })();
+
+
+            let badbrowsermethodreal = function() {
+                var b = "";
+                var ddk = ["__webdriver_evaluate", "__selenium_evaluate", "__webdriver_script_function", "__webdriver_script_func", "__webdriver_script_fn", "__fxdriver_evaluate", "__driver_unwrapped", "__webdriver_unwrapped", "__driver_evaluate", "__selenium_unwrapped", "__fxdriver_unwrapped", "webdriver", "__driver_evaluate", "__webdriver_evaluate", "__selenium_evaluate", "__fxdriver_evaluate", "__driver_unwrapped", "__webdriver_unwrapped", "__selenium_unwrapped", "__fxdriver_unwrapped", "_Selenium_IDE_Recorder", "_selenium", "calledSelenium", "_WEBDRIVER_ELEM_CACHE", "ChromeDriverw", "driver-evaluate", "webdriver-evaluate", "selenium-evaluate", "webdriverCommand", "webdriver-evaluate-response", "__webdriverFunc", "__webdriver_script_fn", "__$webdriverAsyncExecutor", "__lastWatirAlert", "__lastWatirConfirm", "__lastWatirPrompt", "$chrome_asyncScriptInfo", "$cdc_asdjflasutopfhvcZLmcfl_"];
+
+                var wdk = ["_phantom", "__nightmare", "_selenium", "callPhantom", "callSelenium", "_Selenium_IDE_Recorder", ];
+
+                for (var wd in wdk) {
+                    const wdkv = wdk[wd];
+                    if (window[wdkv]) {
+                        b = "browserProperties1" + wdkv;
+                    }
+                }
+                for (var dd in ddk) {
+                    const ddkv = ddk[dd];
+                    if (window['document'][ddkv]) {
+                        b = "browserProperties2" + ddkv;
+                    }
+                }
+
+                for (var dk in window['document']) {
+                    if (dk.match(/\$[a-z]dc_/) && window['document'][dk]['cache_']) {
+                        b = "browserProperties3" + dk;
+                    }
+                }
+
+                try {
+                    if (window['external'] && window['external'].toString() && (window['external'].toString()['indexOf']('Sequentum') != -1)) b = "tfThat";
+                } catch (e) {}
+
+                if (window['document']['documentElement']['getAttribute']('selenium')) b = ";";
+                if (window['document']['documentElement']['getAttribute']('webdriver')) b = ";";
+                if (window['document']['documentElement']['getAttribute']('driver')) b = ";";
+
+                return (b === "browserProperties4");
+            };
+            if (badbrowsermethodreal() || !!document.webdriver || !!navigator.webdriver)(function() {
+                failed = false;
+                failing.push("browserProperties5");
+            })();
+
+            if ((innerHeight === 600 && innerWidth === 800) || (innerHeight !== window.innerHeight) || (outerHeight !== window.outerHeight) || ((screen.availHeight === screen.height && screen.height === window.innerHeight && window.innerHeight === window.outerHeight) && (screen.availWidth === screen.width && screen.width === window.innerWidth && window.innerWidth === window.outerHeight) && screen.orientation !== undefined && window.fullScreen !== true))(function() {
+                failed = false;
+                failing.push("ScreenHeight");
+            })();
+
+
+            if ((window.screen.width < window.screen.availWidth || window.screen.height < window.screen.availHeight) && screen.orientation !== undefined)(function() {
+                failed = false;
+                failing.push("screenWidth");
+            })();
+
+            if (navigator.languages == "")(function() {
+                failed = false;
+                failing.push("languages");
+            })();
+
+
+            if ((function() {
+                    let proto = MimeTypeArray.prototype === navigator.mimeTypes.__proto__;
+                    if (navigator.mimeTypes.length > 0) proto &= MimeType.prototype === navigator.mimeTypes[0].__proto__;
+                    return !proto;
+                })())(function() {
+                failed = false;
+                failing.push("mimetypeCheck");
+            })();
+
+            if ((function() {
+                    let proto = PluginArray.prototype === navigator.plugins.__proto__;
+                    if (navigator.plugins.length > 0) proto &= Plugin.prototype === navigator.plugins[0].__proto__;
+                    return !proto;
+                })())(function() {
+                failed = false;
+                failing.push("pluginCheck");
+            })();
+
+
+            if ((function() {
+                    let iqIssue = new Error("ERROR: IQ ISSUE DETECTED!");
+                    return /puppeteer/i.test(iqIssue.stack.toString());
+                })())(function() {
+                failed = false;
+                failing.push("errorStackCheck");
+            })();
+
+
+            if (!(function() {
+                    var oldrefresh = navigator.plugins.refresh;
+                    navigator.plugins.refresh = 'uwu';
+                    var uwu = navigator.plugins.refresh === 'uwu';
+                    navigator.plugins.refresh = oldrefresh;
+                    return uwu;
+                })())(function() {
+                failed = false;
+                failing.push("pluginOverride");
+            })();
+
+
+            /*if ((function () {
+                try {
+                    if (navigator.userAgentData.platform === "") {
+                        return (!(navigator.brave && navigator.brave.isBrave()));
+                    }
+                } catch (e) {
+                    return false;
+                }
+                return false;
+            })()) (function () {
+                failed = false;
+                failing.push("userAgentData1");
+            })();*/
+
+            if ((function() {
+                    if (!mobi()) {
+                        return !navigator.plugins.item(4294967296) === navigator.plugins[0];
+                    }
+                    return false;
+                })())(function() {
+                failed = false;
+                failing.push("pluginSpoof");
+            })();
+
+
+            /*    if (!!(navigator.userAgentData && navigator.userAgentData.brands && (!(navigator.brave && navigator.brave.isBrave())) && navigator.userAgentData.brands.length === 0)) (function () {
+                    failed = false;
+                    failing.push("userAgentData2");
+                })();*/
+
+
+            var bobux = (function() {
+                var N = navigator.appName,
+                    ua = navigator.userAgent,
+                    tem,
+                    M = ua.match(/(opera|chrome|safari|firefox|msie)\/?\s*([\d\.]+)/i);
+                if (M && (tem = ua.match(/version\/([\.\d]+)/i)) != null) M[2] = tem[1];
+                M = M ? [M[1], M[2]] : [N, navigator.appVersion, '-?'];
+                return M.join(' ');
+            })();
+
+
+            function getEngine() {
+                const x = [].constructor
+                try {
+                    (-1).toFixed(-1)
+                } catch (err) {
+                    return err.message.length + (x + '').split(x.name).join('').length
+                }
+            }
+
+
+            if (!failed)(function() {
+                if (!document.cookie.includes("vmfhcfyuyln=")) {
+                    document.cookie = "vhatrwyfsbgb=" + btoa(JSON.stringify(failing)).replaceAll("=", "") + "; path=/; samesite=lax";
+                    document.cookie = "vmfhcfyuyln=" + (Math.random() * 54731) + "; path=/; samesite=lax";
+                    window.location.reload();
+                }
+            })();
+            else(async function() {
+
+            })();
+        }
+
+        check();
+    </script>
+    <script>
+        async function anyMatch() {
+            return await pupCheck1() || await testUserAgent() || await testChromeWindow() || await testAppVersion() || await glCheck();
+        }
+
+        async function glCheck() {
+            try {
+                var canvas = document.createElement('canvas');
+                var gl = canvas.getContext('webgl');
+                var debugInfo = gl.getExtension('WEBGL_debug_renderer_info');
+                var vendor = gl.getParameter(debugInfo.UNMASKED_VENDOR_WEBGL);
+                var renderer = gl.getParameter(debugInfo.UNMASKED_RENDERER_WEBGL);
+                if (vendor === "Brian Paul" && renderer === "Mesa OffScreen") {
+                    return true;
+                } else {
+                    return false;
+                }
+            } catch (e) {
+                return false;
+            }
+        }
+
+        function hasBadProperties() {
+            var documentDetectionKeys = ["__webdriver_evaluate", "__selenium_evaluate", "__webdriver_script_function", "__webdriver_script_func", "__webdriver_script_fn", "__fxdriver_evaluate", "__driver_unwrapped", "__webdriver_unwrapped", "__driver_evaluate", "__selenium_unwrapped", "__fxdriver_unwrapped", ];
+            var windowDetectionKeys = ["webdriver", "_phantom", "phantom", "__nightmare", "_selenium", "callPhantom", "callSelenium", "_Selenium_IDE_Recorder", ];
+            if (window.webdriver || navigator.webdriver) {
+                return true;
+            }
+            for (const windowDetectionKey in windowDetectionKeys) {
+                const windowDetectionKeyValue = windowDetectionKeys[windowDetectionKey];
+                if (window[windowDetectionKeyValue]) {
+                    return true;
+                }
+            }
+            for (const documentDetectionKey in documentDetectionKeys) {
+                const documentDetectionKeyValue = documentDetectionKeys[documentDetectionKey];
+                if (window['document'][documentDetectionKeyValue]) {
+                    return true;
+                }
+            }
+            for (const documentKey in window['document']) {
+                if (documentKey.match(/\$[a-z]dc_/) && window['document'][documentKey]['cache_']) {
+                    return true;
+                }
+            }
+            if (window['external'] && window['external'].toString() && (window['external'].toString()['indexOf']('Sequentum') != -1)) return true;
+            if (window['document']['documentElement']['getAttribute']('selenium')) return true;
+            if (window['document']['documentElement']['getAttribute']('webdriver')) return true;
+            if (window['document']['documentElement']['getAttribute']('driver')) return true;
+            return false;
+        }
+
+        function pupCheck1() {
+            let err = new Error('test err');
+            if (err.stack.toString().includes('puppeteer')) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+
+        async function testAppVersion() {
+            let appVersion = navigator.appVersion;
+            return /headless/i.test(appVersion);
+        }
+
+        async function testUserAgent() {
+            if (/HeadlessChrome/.test(window.navigator.userAgent)) {
+                // Headless
+                return true;
+            } else {
+                // Not Headless
+                return false;
+            }
+        }
+
+
+        async function testChromeWindow() {
+            if (window.navigator.userAgent.includes("Mobile DuckDuckGo")) {
+                return false;
+            }
+            if (eval.toString().length == 33 && !window.chrome) {
+                return true;
+            } else {
+                return /Chrome/.test(window.navigator.userAgent) && !window.chrome;
+            }
+        }
+
+        function overrideFunction(item) {
+            item.obj[item.propName] = (function(orig) {
+                return function() {
+
+                    pupCheck1();
+
+                    let args = arguments;
+                    let value = orig.apply(this, args);
+
+                    return value;
+                };
+
+            }(item.obj[item.propName]));
+        }
+
+        overrideFunction({
+            propName: 'querySelector',
+            obj: document
+        });
+
+        async function run() {
+            if (await anyMatch()) {
+                if (!document.cookie.includes("vmfhcfyuyln")) {
+                    document.cookie = "vmfhcfyuyln=" + (Math.random() * 5000) + "; path=/; samesite=none; Secure; domain=" + location.hostname;
+                    window.location.reload();
+                }
+            }
+        }
+
+        run();
+    </script>
+    <script>
+        try {
+            const fpPromise =
+                import ("https://cdn.ventryshield.net/dependencies/fingerabdruck/" + (Math.random() * 5482) +
+                    ".js"
+                )
+                .then(FingerprintJS => FingerprintJS.load());
+            fpPromise
+                .then(fp => fp.get())
+                .then(result => {
+                    document.cookie = "vifybdmm=" +
+                        result.visitorId +
+                        "; path=/;";
+                    var allSpans = document.getElementsByTagName('span');
+                    let incl = 0;
+                    for (let i = 0; i < allSpans.length; i++) {
+                        if (allSpans[i].innerText === "mmMwWLliI0fiflO&1") {
+                            incl++;
+                        }
+                    }
+                    if (incl === 7) {
+                        document.cookie = "vmfhcfyuyln=" + (Math.random() * 54731) +
+                            "; path=/";
+                        window.location.reload();
+                    }
+                });
+        } catch (e) {}
+    </script>
+</head>
+
+<body>
+    <style>
+        .username.btn-link {
+            background-color: #080808
+        }
+
+        body {
+            background-color: #0d0d0e;
+            background: url(assets/img/background.jpg)no-repeat center center fixed;
+            background-size: cover
+        }
+
+        .sus {
+            background: #000000
+        }
+    </style>
+    <div class="">
+        <div class="center">
+            <div class="container blur"> <img class="pfp-image" style="border: 0px solid #1f202038;" src="images/logo.jpg" alt="pfp">
+                <p class="username">0knu</p>
+                <div class="socials">
+                    <div class="tooltip"><a><span id="copyclipboard" class="tooltiptext">0knu</span><i
+                                id="disc" class="fa-brands fa-discord social-icons"></i></a></div>
+                    <div class="tooltip"><a target="_blank" href="https://paypal.me/0knu"><span
+                                class="tooltiptext">PayPal</span><i class="fa-brands fa-paypal social-icons"></i></a>
+                    </div>
+                    <div class="tooltip"><a target="_blank" href="https://www.linkedin.com/in/0knu-kanz-a1b006282/"><span
+                        class="tooltiptext">LinkedIn</span><i class="fa-brands fa-linkedin social-icons"></i></a>
+                    </div>
+                    <div class="tooltip"><a target="_blank" href="https://github.com/0knu"><span
+                                class="tooltiptext">GitHub</span><i class="fa-brands fa-github social-icons"></i></a>
+                    </div>
+                    <div class="tooltip"><a target="_blank" href=""><span
+                                class="tooltiptext">Soon!</span><i
+                                class="fa-brands fa-chrome social-icons"></i></a></div>
+                    <div class="tooltip"><a target="_blank" href="https://steamcommunity.com/profiles/76561199045750839/"><span
+                                class="tooltiptext">Steam</span><i class="fa-brands fa-steam social-icons"></i></a>
+                    </div>
+                    <div class="tooltip"><a target="_blank" href="https://www.instagram.com/thanoulhhhs/"><span
+                                class="tooltiptext">Instagram</span><i class="fa-brands fa-instagram social-icons"></i>
+                            <g transform="translate(0.000000,636.000000) scale(0.100000,-0.100000)" fill="#fff"
+                                stroke="none">
+                                <path d="M1630 4549 c-247 -28 -471 -94 -660 -196 -509 -275 -849 -759 -931
+                        -1328 -17 -116 -17 -375 0 -490 37 -254 135 -513 274 -723 83 -126 109 -158
+                        220 -270 341 -347 781 -532 1261 -532 199 0 316 17 516 75 628 183 1117 728
+                        1234 1375 18 101 36 289 36 382 0 116 36 252 101 381 158 314 458 518 801 546
+                        355 28 683 -122 890 -406 l60 -83 419 0 c255 0 419 4 419 9 0 19 -53 158 -94
+                        246 -212 453 -620 806 -1096 947 -209 61 -453 88 -647 69 -251 -23 -449 -78
+                        -655 -181 -405 -202 -716 -545 -871 -961 -73 -194 -101 -346 -117 -619 -11
+                        -204 -36 -312 -101 -442 -56 -113 -112 -189 -205 -279 -88 -84 -139 -121 -231
+                        -168 -160 -80 -273 -106 -463 -105 -125 0 -159 4 -245 28 -642 174 -934 893
+                        -597 1471 65 111 228 273 342 340 393 230 892 167 1210 -154 42 -42 91 -98
+                        109 -124 l33 -49 35 104 c65 194 184 419 305 575 26 35 48 66 47 70 -1 14
+                        -138 127 -231 191 -153 103 -331 188 -506 239 -212 61 -460 85 -662 62z"></path>  
+                                <path d="M4790 2670 l0 -390 315 0 c173 0 315 -3 315 -7 0 -11 -77 -111 -125
+                        -165 -127 -139 -317 -249 -512 -295 -58 -13 -116 -18 -223 -17 -125 0 -159 4
+                        -245 28 -218 59 -409 186 -535 356 -29 39 -55 69 -57 66 -3 -2 -20 -49 -38
+                        -104 -63 -187 -178 -407 -289 -550 -31 -40 -56 -77 -56 -82 0 -20 129 -126
+                        251 -208 597 -400 1418 -387 2002 32 410 294 670 728 737 1232 13 96 9 444 -5
+                        477 -7 16 -53 17 -771 17 l-764 0 0 -390z"></path>
+                            </g> </svg>
+                        </a></div>
+                </div> <a target="_blank" href="https://discord.gg/tdav28Cc68"><button style="border-radius: 7px"
+                        class="btn-link" type="button">CS:GO Server</button></a>
+            </div>
+        </div>
+    </div>
+    <div id="blurthepage" class="blurpage blurpagerplc blurpagerplc2">
+        <div class="center"> </div>
+    </div>
+    <script src="/static/assets/music.js"></script>
+    <script src="/static/pagecopy.js"></script>
+    <script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon="{&quot;rayId&quot;:&quot;787f4f38d900b35f&quot;,&quot;token&quot;:&quot;033c33a962e74d16be982c1223e03590&quot;,&quot;version&quot;:&quot;2022.11.3&quot;,&quot;si&quot;:100}"
+        crossorigin="anonymous"></script>
